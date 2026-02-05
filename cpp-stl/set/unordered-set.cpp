@@ -2,6 +2,8 @@
 using namespace std;
 
 /*
+Hash-based, Duplicates NOT allowed, unordered
+
 Time complexity:
 
 Insertion- O(1)

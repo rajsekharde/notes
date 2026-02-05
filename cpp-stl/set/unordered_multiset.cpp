@@ -2,23 +2,24 @@
 using namespace std;
 
 /*
-Balanced BST, duplicates NOT allowed, sorted in ascending order
+Hash-based, Duplicates allowed, unordered
 
 Time complexity:
 
-Insertion- O(log(n))
+Insertion- O(1)
 
-Deletion- O(log(n))
+Deletion- O(1)
 
-Lookup- O(log(n))
+Lookup- O(1)
 */
 
 int main() {
     // Declaration
-    set<int> s1;
-    set<int> s2 = {1, 2, 5, 3, 4};
+    unordered_multiset<int> s1;
+    unordered_multiset<int> s2 = {1, 2, 5, 3, 4};
 
     // Insertion
+    s1.insert(1);
     s1.insert(1);
 
     // Deletion

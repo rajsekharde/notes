@@ -1,7 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Time complexity- O(log(n)) for insertion, deletion, lookup
+/*
+BST key-value, duplicates NOT allowed, keys sorted in ascending order
+
+Time complexity- O(log(n)) for insertion, deletion, lookup
+*/
 
 int main() {
 	// Creating an empty map

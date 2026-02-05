@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-Balanced BST, duplicates NOT allowed, sorted in ascending order
+Balanced BST, duplicates allowed, sorted in ascending order
 
 Time complexity:
 
@@ -15,10 +15,12 @@ Lookup- O(log(n))
 
 int main() {
     // Declaration
-    set<int> s1;
-    set<int> s2 = {1, 2, 5, 3, 4};
+    multiset<int> s1;
+    multiset<int> s2 = {1, 2, 5, 3, 4};
 
     // Insertion
+    s1.insert(1);
+    s1.insert(1);
     s1.insert(1);
 
     // Deletion
@@ -31,4 +33,6 @@ int main() {
     // Traversal
     for (auto it = s2.begin(); it != s2.end(); ++it)
         cout << *it << " ";
+    
+    auto range = s1.equal_range(1); // Returns iterators to all 1s
 }

@@ -2,20 +2,22 @@
 using namespace std;
 
 /*
-Hash-table key-value, duplicates NOT allowed, unordered
+BST key-value, duplicates allowed, keys sorted in ascending order
 
-Time complexity- O(1) for insertion, deletion, lookup
+Time complexity- O(log(n)) for insertion, deletion, lookup
 */
 
 int main() {
 	// Creating an empty map
-	unordered_map<int, string> m1;
+	map<int, string> m1;
 
 	// Creating and initializing a map using a list
-	unordered_map<string, int> m2 = {{"Hello", 1}, {"World", 2}};
+	map<string, int> m2 = {{"Hello", 1}, {"World", 2}};
 
 	// Inserting values
 	m1.insert({1, "A"});
+    m1.insert({1, "B"});
+    m1.insert({1, "C"});
 	m1[2] = "B";
 
 	// Accessing values by keys
@@ -31,7 +33,7 @@ int main() {
 
 	// Finding elements
 	auto f = m1.find(1); // Returns key if found, otherwise m1.end()
-    int c = m1.count(1); // Returns 0 if not found
+	int c = m1.count(1); // Returns 0 if not found
 
 	// Traversal
 	for (auto &p: m2)
@@ -39,4 +41,6 @@ int main() {
 	for (auto it = m2.begin(); it != m2.end(); ++it)
 		cout << it->first << " " << it->second << "\n";
 	return 0;
+
+    auto range = m1.equal_range(1); // Returns iterators to all 1s
 }
