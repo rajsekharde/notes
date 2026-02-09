@@ -20,9 +20,15 @@ int main() {
     // Removing top element
     pq.pop();
 
+    // Check if empty
+    int ch = pq.empty();
 
-    // Min-heap
+
+    // Min-heap of integers
     priority_queue<int, vector<int>, greater<int>> minHeap;
+
+    // Min-heap of pair<int, int>
+    priority_queue<pair<int, int>, vector<int, int>, greater<pair<int, int>>> minHeapP;
 
     return 0;
 }
