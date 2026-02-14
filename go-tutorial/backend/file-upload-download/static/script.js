@@ -1,18 +1,27 @@
+
+// Handling file upload in frontend
 async function upload() {
+    // Get the first file from the file input
     const file = document.getElementById('fileInput').files[0];
+
+    // Display message if file is not selected
     if(!file)
         return alert('Choose file')
 
+    // Create FormData using the file
     const formData = new FormData();
     formData.append('file', file);
 
+    // Sends POST /upload to backend with formData as body
     await fetch ('/upload', {
         method: 'POST',
         body: formData
     });
 
+    // Fetches and displays updated file list
     loadFiles();
 }
+
 
 async function loadFiles() {
     const res = await fetch('/files');
