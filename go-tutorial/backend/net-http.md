@@ -15,4 +15,4 @@ handles:
 
 Basic server - ./http-server
 
-
+REST API endpoints - ./rest-api
