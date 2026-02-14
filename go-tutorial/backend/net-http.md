@@ -16,3 +16,5 @@ handles:
 Basic server - ./http-server
 
 REST API endpoints - ./rest-api
+
+Serving frontend - ./static-frontend-serving
