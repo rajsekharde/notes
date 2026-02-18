@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 	"net/http"
 )
 
@@ -13,20 +13,19 @@ Create all REST API endpoints- GET, POST, PUT, PATCH, DELETE using net/http pack
 
 type User struct {
 	Name string `json:"name"`
-	Age int `json:"age"`
+	Age  int    `json:"age"`
 }
 
 // Test object (temp database)
 var user1 = User{"RSD", 21}
 
-
 // Single handler for all 'user' api endpoints
 func usersHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
-	
+
 	case http.MethodGet:
 		getUsers(w, r)
-	
+
 	case http.MethodPost:
 		createUser(w, r)
 
@@ -38,7 +37,7 @@ func usersHandler(w http.ResponseWriter, r *http.Request) {
 
 	case http.MethodDelete:
 		deleteUser(w, r)
-	
+
 	default:
 		http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
 	}
@@ -97,3 +96,12 @@ func main() {
 	// Starting server on port 8080
 	http.ListenAndServe(":8080", nil)
 }
+
+/*
+Additions:
+
+Use mux := http.NewServeMux() as a custom router instead of default global router
+	+ mux.HandleFunc("GET /users", usersHandler) to avoid method checks later on
+
+Use log.Println for logging with timestamps
+*/
