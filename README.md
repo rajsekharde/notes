@@ -1,6 +1,5 @@
 # Notes & Learning Experiments
 
-Personal notes, small programs, and experiments while learning
-systems programming, Go, Linux, networking, and DSA.
+Personal notes, programs, and experiments while learning programming languages, frameworks, Linux, CS subjects and random things
 
-This repo is primarily for self-reference and iteration.
+This repo is primarily for self-reference
