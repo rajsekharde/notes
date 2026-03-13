@@ -2,6 +2,12 @@
 #include <pthread.h>
 #include <unistd.h>
 
+/*
+Multiple threads can ba spawned by creating and storing their identifiers
+in a pthread_t array, then iterating through the array once for creation
+and once again for joining
+*/
+
 typedef struct
 {
     int id;
