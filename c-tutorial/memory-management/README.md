@@ -1,9 +1,12 @@
 # Memory management in C
 
-## Types of memory
-- Stack Memory: Automatically allocated & deallocated by CPU
+## Memory layout of a process
 - Heap Memory: Manually managed using malloc & free
-- Global Variables: Shared by all members of a program
+- Stack Memory: Automatically allocated & deallocated by CPU
+- Global/Static variables:
+    - Un-initialised
+    - Initialised
+- Text/Code: Stores the code and instructions
 
 ## Stack Memory
 
