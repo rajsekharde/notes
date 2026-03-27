@@ -21,6 +21,18 @@ int main() {
 
     // Access last element
     cout << dq.back();
+
+    // Remove first element
+    dq.pop_front();
+
+    // Remove last element
+    dq.pop_back();
+
+    // Get size
+    int s = dq.size();
+
+    // Check if empty
+    bool e = q.empty();
     
     return 0;
 }

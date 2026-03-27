@@ -15,8 +15,17 @@ int main() {
     // Accessing first element
     cout << q.front();
 
-    // Remove last element
+    // Accessing last element
+    cout << q.back();
+
+    // Remove first element
     q.pop();
+
+    // Get size
+    int s = q.size();
+
+    // Check if empty
+    bool e = q.empty();
 
     return 0;
 }
