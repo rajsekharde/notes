@@ -51,7 +51,7 @@ int main() {
     display(v3);
 
     // Sort a vector in descending order
-    sort(v4.begin(), v4.end());
+    sort(v4.begin(), v4.end(), greater<int>());
     display(v4);
 
     // Reverse a vector
