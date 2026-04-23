@@ -12,7 +12,7 @@ nums = [2,7,11,15], target = 9
 
 store {nums: indices} in a hash map
 
-iterate through nums. For each number, check if target-number is present in set. If yes, return indices
+iterate through nums. For each number, check if (target - number) is present in set. If yes, return indices
 
 ```bash
 vector<int> twoSum(vector<int>& nums, int target) {
@@ -32,5 +32,5 @@ vector<int> twoSum(vector<int>& nums, int target) {
 }
 ```
 
-return {}
+
 Time complexity = O(n)

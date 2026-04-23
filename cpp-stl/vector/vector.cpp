@@ -61,5 +61,11 @@ int main() {
     // Check if a vector is empty
     cout << v1.empty() << "\n"; // prints true(1) if empty
 
+    // Check if an element is present in a vectorr
+    int c = v.count(10); // returns no. of occurrences
+    if(c) cout << "Present";
+    // v.find(): returns pointer to position, or v.end()
+    if(v.find(10) != v.end()) cout << "Present";
+
     return 0;
 }
