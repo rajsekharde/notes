@@ -15,6 +15,9 @@
 - Top k frequent elements: heap, hash-table
 - Find minimum in rotated sorted array: binary-search,array
 - Best time to buy and sell stocks: sliding-window, greedy
+- Reverse linked list: linked-list, recursion
+- Merge two sorted lists: linked-list, priority-queue
+- Invert binary tree: recursion, bfs, dfs
 
 
 

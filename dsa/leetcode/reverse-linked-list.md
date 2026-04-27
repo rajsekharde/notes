@@ -47,3 +47,26 @@ Space complexity: O(1)
         return newHead;
     }
 ```
+
+# Approach 3
+
+Using iteration. Iterate throught the list and keep reversing the direction of connections. For each node curr, {next = curr->next, curr->next = prev, prev = curr}, then move to the next node using curr = next.
+
+Time complexity: O(n)
+
+Space complexity: O(1)
+
+```bash
+    ListNode* reverseList(ListNode* head) {
+        ListNode *prev = nullptr, *next = nullptr, *curr;
+        curr = head;
+        while(curr != nullptr) {
+            next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+        return head;
+    }
+```
