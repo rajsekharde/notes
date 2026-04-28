@@ -18,6 +18,7 @@
 - Reverse linked list: linked-list, recursion
 - Merge two sorted lists: linked-list, priority-queue
 - Invert binary tree: recursion, bfs, dfs
+- Same tree: recursion, bfs, dfs
 
 
 
