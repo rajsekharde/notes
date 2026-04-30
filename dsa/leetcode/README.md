@@ -6,19 +6,24 @@
 - String to Integer: array, string
 - Letter combinations of a phone number: back-tracking, hash-table
 - Longest substring without repeating characters: sliding-window, hash-table
-- Valid Sudoku: grid traversal, hash-table
+- Valid Sudoku: grid-traversal, hash-table
 - Set matrix zeros: hash-table, matrix
 - Contains duplicate: hash-table, sorting
 - Valid Anagram: array, hash-table, sorting
 - Group Anagram: sorting, hash-table
 - Valid Palindrome: two-pointer, array
 - Top k frequent elements: heap, hash-table
-- Find minimum in rotated sorted array: binary-search,array
+#- Find minimum in rotated sorted array: binary-search, array
 - Best time to buy and sell stocks: sliding-window, greedy
 - Reverse linked list: linked-list, recursion
 - Merge two sorted lists: linked-list, priority-queue
 - Invert binary tree: recursion, bfs, dfs
 - Same tree: recursion, bfs, dfs
+- Subtree of another tree: bfs, dfs, recursion
+- Lowest common ancestor of a binary search tree: binary-search-tree
+- Binary tree level order traversal: bfs
+- Number of islands: grid-traversal, bfs, dfs
+- Climbing Stairs: dynamic-programming, memoization
 
 
 
